@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS program</title>
+</head>
+<body>
+    <script>
+        //Array Spreading
+
+        let arr1=["Ruba","Renu","Kalai"];
+        let arr2=["Sanjay","Akjay","Karan","Guru"]
+        console.log(...arr1,...arr2)
+
+        //Filter
+
+        let arr3=arr1.filter(x=>x.startsWith("R"));
+        console.log(arr3);
+        console.log(arr2.filter(x=>x.startsWith("S")))
+
+
+        //Merge two arrays
+
+        let num1=[10,9,8,7];
+        let num2=[10,2,3,7];
+        console.log(num1.concat(num2));
+
+        //flattening Array
+
+        let a=[1,2,[3,4,[5,[6,7]]]]
+        console.log(a.flat());
+        console.log(a)
+
+        //intersection
+        let num3=[];
+        for(i=0;i<num1.length;i++){
+            for(j=0;j<num2.length;j++){
+                if(num1[i]==num2[j]){
+                    num3[i]=num1[i];
+                }
+                
+            }
+        }
+        console.log(num3);
+    </script>
+</body>
+</html>
